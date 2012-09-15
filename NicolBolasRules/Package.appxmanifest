@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="0ee64f4e-946f-4e22-9524-09616fb2756b"
+            Publisher="CN=Tom"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>NicolBolasRules</DisplayName>
+    <PublisherDisplayName>Tom</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="NicolBolasRules.App">
+        <VisualElements
+            DisplayName="NicolBolasRules"
+            Logo="Assets\Logo.png"
+            SmallLogo="Assets\SmallLogo.png"
+            Description="NicolBolasRules"
+            ForegroundText="light"
+            BackgroundColor="#464646">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Assets\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
